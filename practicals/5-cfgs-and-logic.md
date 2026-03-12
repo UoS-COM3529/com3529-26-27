@@ -1,12 +1,12 @@
 # COM3529 Practical Session 4: Control Flow and Logic Analysis
 
-### Control Flow Graphs (CFGs)
+## Control Flow Graphs (CFGs)
 
 Draw the control flow graph (CFG) for the [`Triangle.classify`](../code/lib/src/main/java/uk/ac/shef/com3529/Triangle.java#L11) method. 
    
 One thing we did not consider in lectures is what happens, control flow-wise, when an exception is thrown. Include what you think is the control flow when an exception is throw in your graph.
 
-### Branch and Path Coverage
+## Branch and Path Coverage
 
 Given the following two examples, analyse whether satisfying **Branch Coverage** and **Path Coverage** is possible or not. For Path Coverage, can you enumerate the possible paths through the code? Can you write JUnit tests to justify your answer?
 
@@ -38,7 +38,7 @@ int gcd(int a, int b) {
 }
 ```
 
-### Logic Analysis and Testing
+## Logic Analysis and Testing
 
 The code segment that returns when a triangle is isosceles in the [`Triangle.classify`](../code/lib/src/main/java/uk/ac/shef/com3529/Triangle.java) method could be re-written as follows:
 
