@@ -36,7 +36,7 @@ Jump to:
 |6 | [**Regression Testing**](slides/8-regression-testing.pdf) <ul><li>Test minimisation</li><li>Test prioritisation</li><li>Test selection</li></ul>| [Regression Testing in Practice](practicals/7-regression-testing.md) ([Solutions](practicals/7-regression-testing-solutions.md)) |
 |7 | **[Model-Based Testing](slides/9-Model_based_testing.pdf)** | [MBT Exercises](practicals/8-MBT.md) ([Solution](practicals/)) |
 | Easter Vacation | | |
-|8 | **[Mutation Testing](slides/)** | [Code Defenders](practicals/) |
+|8 | **[Mutation Testing](slides/10-Mutation_testing.pdf)** | [Code Defenders](slides/10-Mutation_testing.pdf) |
 |9 | **[Search-Based Test Generation](slides/)** | [The EvoSuite Tool](practicals/) |
 |10| **[Fuzzing](slides/)** | [Your First Fuzzer](practicals/) ([Solution](practicals/)) |
 
