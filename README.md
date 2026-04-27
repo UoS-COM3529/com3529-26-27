@@ -37,7 +37,7 @@ Jump to:
 |7 | **[Model-Based Testing](slides/9-Model_based_testing.pdf)** | [MBT Exercises](practicals/8-MBT.md) ([Solution](practicals/)) |
 | Easter Vacation | | |
 |8 | **[Mutation Testing](slides/10-Mutation_testing.pdf)** | [Code Defenders](slides/10-Mutation_testing.pdf) |
-|9 | **[Search-Based Test Generation](slides/)** | [The EvoSuite Tool](practicals/) |
+|9 | **[Search-Based Test Generation](slides/11-search_based_software_testing.pdf)** | [The EvoSuite Tool](practicals/) |
 |10| **[Fuzzing](slides/)** | [Your First Fuzzer](practicals/) ([Solution](practicals/)) |
 
 ### Lectures
