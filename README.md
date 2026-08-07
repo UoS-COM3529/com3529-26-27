@@ -14,7 +14,7 @@ Jump to:
 
   |<img src="misc/images/jose.jpg" width="150"/> | <img src="misc/images/neil.jpg" width="150"/> |
   |:-:|:-:|
-  | **[José Rojas](https://jmrojas.github.io)** <br /> Lecturer <br /> Weeks 1&ndash;5 | **[Neil Walkinshaw](https://neilwalkinshaw.github.io/)** <br /> Lecturer <br /> Weeks 6&ndash;10 
+  | **[José Rojas](https://jmrojas.github.io)** <br /> Lecturer <br /> Weeks 2&ndash;5 and 8 | **[Neil Walkinshaw](https://neilwalkinshaw.github.io/)** <br /> Lecturer <br /> Weeks 1, 6&ndash;7 and 9&ndash;10
 
   |<img src="misc/images/zalan.jpeg" width="150"/> | <img src="misc/images/nathan.jpeg" width="150"/> |
   |:-:|:-:|
@@ -42,11 +42,11 @@ Jump to:
 
 ### Lectures
 
-Lectures will be held on **Monday 2pm (1h) in Lecture Theatre 5 of [The Diamond](https://www.sheffield.ac.uk/engineering/diamond-engineering/floor-plans)**.
+Lectures will be held on **Monday 10:00 (1h) in Lecture Theatre 1 of the [Sir Henry Stephenson Building](https://sites.google.com/sheffield.ac.uk/pooledroomdirectory/teaching-spaces/sir-henry-stephenson-building/107-stephenson-lt-01)**.
 
 ### Practical Sessions (Labs)
 
-Practical Sessions (Labs) will be held on **Tuesday 11am (1h) in Computer Room 5 of [The Diamond](https://www.sheffield.ac.uk/engineering/diamond-engineering/floor-plans)**. These sessions will be a mix of coding and paper/pen exercises that are designed to help you prepare for the exam, based on that week's lecture materials. You'll need to bring your own laptop to the session, and have Java 11 or better installed on it. More information can be found in the **Getting Started** slides from week 1's practical session. You can use the laptop loan facility if you wish.
+Practical Sessions (Labs) will be held on **Friday 11:00 (1h) in Computer Room 5 of [The Diamond](https://www.sheffield.ac.uk/engineering/diamond-engineering/floor-plans)**. These sessions will be a mix of coding and paper/pen exercises that are designed to help you prepare for the exam, based on that week's lecture materials. You'll need to bring your own laptop to the session, and have Java 11 or better installed on it. More information can be found in the **Getting Started** slides from week 1's practical session. You can use the laptop loan facility if you wish.
 
 
 ## 3. Assessment
