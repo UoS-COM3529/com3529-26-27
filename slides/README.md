@@ -1,1 +1,3 @@
-PDF slides will be uploaded in this directory.
+# Lecture Slides
+
+PDF slides will be uploaded on a weekly basis ahead of each lecture.

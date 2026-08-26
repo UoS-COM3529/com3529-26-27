@@ -1,1 +1,3 @@
-Lab materials will be uploaded in this directory.
+# Lab Worksheets
+
+Worksheets and materials will be uploaded on a weekly basis in this directory ahead of each lab session.
