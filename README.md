@@ -4,15 +4,17 @@ Welcome! This repository contains code examples, practical sheets, and slides to
 
 ## Teaching Staff
 
-  |<img src="misc/images/jose.jpg" width="150"/> | <img src="misc/images/neil.jpg" width="150"/> |
-  |:-:|:-:|
-  | **[José Rojas](https://jmrojas.github.io)** <br /> Lecturer <br /> Weeks 2&ndash;5 and 8 | **[Neil Walkinshaw](https://neilwalkinshaw.github.io/)** <br /> Lecturer <br /> Weeks 1, 6&ndash;7 and 9&ndash;10
+<img src="misc/images/jose.jpg" width="150" style="border-radius: 10%; margin-right: 15px; float: left;">**[José Rojas](https://jmrojas.github.io)**<br> Lecturer  
+Weeks 2–5, 8  
+<br clear="left">
 
-  |<img src="https://placehold.co/150x150?text=TA" width="150"/> | <img src="https://placehold.co/150x150?text=TA" width="150"/> |
-  |:-:|:-:|
-  |Teaching Assistant | Teaching Assistant |
+<img src="misc/images/neil.jpg" width="150" style="border-radius: 10%; margin-right: 15px; float: left;">**[Neil Walkinshaw](https://neilwalkinshaw.github.io/)** <br> Lecturer  
+Weeks 1, 6–7, 9–10  
+<br clear="left">
 
-
+<img src="https://placehold.co/150x150?text=TA" width="150" style="border-radius: 10%; margin-right: 15px; float: left;">**TBC** <br> Teaching Assistant  
+Practical Sessions 
+<br clear="left">
 
 ## Schedule and Materials
 
@@ -43,9 +45,9 @@ These sessions are a mix of coding and paper/pen exercises that directly relate 
 
 ## Assessment
 
-COM3529 is assessed 100% by an exam, to be scheduled in the [Autumn exam period](https://sheffield.ac.uk/new-students/standard-exam-dates-venues).
+COM3529 is assessed 100% by an exam in the [Autumn exam period](https://sheffield.ac.uk/new-students/standard-exam-dates-venues).
 
 
 **What to expect:** You will be asked questions testing your understanding of the concepts covered in lectures and practical sessions. The exam may also feature questions requiring you to write Java code that is **syntactically correct** and JUnit tests that call methods in libraries studied in the module (e.g., assertion and mocking libraries).
 
-**How to prepare:** Consult [past exam papers](https://www.dcs.shef.ac.uk/intranet/teaching/campus/pastpapers.html) when revising. They will give you a good sense of the format, difficulty, and types of questions you will encounter in the exam. Engage actively with practical sessions, as questions may draw directly from concepts covered there.
+**How to prepare:** Consulting [past exam papers](https://www.dcs.shef.ac.uk/intranet/teaching/campus/pastpapers.html) when revising will give you a good sense of the format, difficulty, and types of questions you will be asked. Engage actively with practical sessions, as questions may draw directly from concepts covered there.
