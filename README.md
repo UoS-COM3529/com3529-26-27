@@ -4,17 +4,13 @@ Welcome! This repository contains code examples, practical sheets, and slides to
 
 ## Teaching Staff
 
-<img src="misc/images/jose.jpg" width="150" style="border-radius: 10%; margin-right: 15px; float: left;">**[José Rojas](https://jmrojas.github.io)**<br> Lecturer  
-Weeks 2–5, 8  
-<br clear="left">
+  |<img src="misc/images/jose.jpg" width="150"/> | <img src="misc/images/neil.jpg" width="150"/> |
+  |:-:|:-:|
+  | **[José Rojas](https://jmrojas.github.io)** <br /> Lecturer <br /> Weeks 2–5, 8 | **[Neil Walkinshaw](https://neilwalkinshaw.github.io/)** <br /> Lecturer <br /> Weeks 1, 6–7, 9–10 
 
-<img src="misc/images/neil.jpg" width="150" style="border-radius: 10%; margin-right: 15px; float: left;">**[Neil Walkinshaw](https://neilwalkinshaw.github.io/)** <br> Lecturer  
-Weeks 1, 6–7, 9–10  
-<br clear="left">
-
-<img src="https://placehold.co/150x150?text=TA" width="150" style="border-radius: 10%; margin-right: 15px; float: left;">**TBC** <br> Teaching Assistant  
-Practical Sessions 
-<br clear="left">
+  |<img src="https://placehold.co/150x150?text=TA" width="150"/> |  |
+  |:-:|:-:|
+  |**TBC** <br /> Teaching Assistant <br /> Practical Sessions |  |
 
 ## Schedule and Materials
 
