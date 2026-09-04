@@ -8,9 +8,9 @@ Welcome! This repository contains code examples, practical sheets, and slides to
   |:-:|:-:|
   | **[José Rojas](https://jmrojas.github.io)** <br /> Lecturer <br /> Weeks 2–5, 8 | **[Neil Walkinshaw](https://neilwalkinshaw.github.io/)** <br /> Lecturer <br /> Weeks 1, 6–7, 9–10 
 
-  |<img src="https://placehold.co/150x150?text=TA" width="150"/> |  |
-  |:-:|:-:|
-  |**TBC** <br /> Teaching Assistant <br /> Practical Sessions |  |
+  |<img src="https://placehold.co/150x150?text=TA" width="150"/> |
+  |:-:|
+  |**TBC** <br /> Teaching Assistant <br /> Practical Sessions |
 
 ## Schedule and Materials
 
