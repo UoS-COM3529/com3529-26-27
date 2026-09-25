@@ -8,9 +8,10 @@ Welcome! This repository contains code examples, practical sheets, and slides to
   |:-:|:-:|
   | **[José Rojas](https://jmrojas.github.io)** <br /> Lecturer <br /> Weeks 2–5, 8 | **[Neil Walkinshaw](https://neilwalkinshaw.github.io/)** <br /> Lecturer <br /> Weeks 1, 6–7, 9–10 
 
-  |<img src="https://placehold.co/150x150?text=TA" width="150"/> |
-  |:-:|
-  |**TBC** <br /> Teaching Assistant <br /> Practical Sessions |
+  |<img src="misc/images/nathan.jpg" width="150"/> |<img src="misc/images/joel.jpg" width="150"/> 
+  |:-:|:-:|
+  |Nathan Shaw  <br /> Teaching Assistant <br /> Practical Sessions |Joel Hogg  <br /> Teaching Assistant <br /> Practical Sessions |
+ 
 
 ## Schedule and Materials
 
@@ -20,18 +21,17 @@ Welcome! This repository contains code examples, practical sheets, and slides to
 
 | Week | Lecture | Practical Session |
 |-:|-|-|
-|1 | **[Introduction](slides/README.md)** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public)<ul><li>Beizer's Maturity Model</li><li>Why finding all bugs is impossible</li><li>How software failures happen (the RIPR model)</li></ul>| [Getting Started](practicals/1-getting-started.md) ([Solutions](practicals/solutions/README.md)) |
-|2 | **[Testing Big and Small – Part 1](slides/README.md)** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public)<ul><li>Test Automation</li><li>Testing Scope (The Test Triangle)</li></ul> | [Defects, Infections and Failures](practicals/README.md) ([Solutions](practicals/solutions/README.md))|
-|3 | **Testing Big and Small – Part 2** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public)<ul><li>[Unit Testing](slides/README.md)<ul><li>Avoiding Brittle Tests</li><li>Writing Clear Unit Tests</li></ul> | [Better Unit Testing](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
-|4 | **Testing Big and Small Part 3** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public)<ul><li>[Test Doubles](slides/README.md) [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public)</li><li>[Larger Tests](slides/README.md) [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public)</li></ul>**[Coverage Criteria, Introduction](slides/README.md)**<ul><li>Introduction to Coverage Criteria</li></ul> | [Test Doubles](practicals/README.md) ([Solutions](practicals/solutions/README.md)) and [Test Coverage](practicals/README.md) ([Solutions](practicals/solutions/README.md))|
-|5 | **[Coverage Criteria, Part 2](slides/README.md)** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public)<ul><li>Control Flow Analysis and Testing</li><li>Logic Analysis and Testing</li><li>Conclusions on Coverage</li></ul> | [Control Flow Graphs and Logic Testing](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
-|6 | [**Regression Testing**](slides/README.md) [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public) <ul><li>Test minimisation</li><li>Test prioritisation</li><li>Test selection</li></ul>| [Regression Testing in Practice](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
-|7 | **[Model-Based Testing](slides/README.md)** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public) | [MBT Exercises](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
-|8 | **[Mutation Testing](slides/README.md)** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public) | [Code Defenders](slides/README.md) ([Solutions](practicals/solutions/README.md)) |
-|9 | **[Search-Based Test Generation](slides/README.md)** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public) | [The EvoSuite Tool](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
-|10| **[Fuzzing](slides/README.md)** [🎥](https://echo360.org.uk/section/ac117105-4843-42ab-afc3-cc3522e628f7/public) | [Your First Fuzzer](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
+|1 | **[Introduction](slides/1-introduction.pdf)** <ul><li>What do we mean by "testing"?</li><li>Why finding all bugs is impossible</li><li>How software failures happen (the RIPR model)</li></ul>| [Getting Started](practicals/1-getting-started.md) ([Solutions](practicals/solutions/README.md)) |
+|2 | **[Testing Big and Small – Part 1](slides/README.md)** <ul><li>Test Automation</li><li>Testing Scope (The Test Triangle)</li></ul> | [Defects, Infections and Failures](practicals/README.md) ([Solutions](practicals/solutions/README.md))|
+|3 | **Testing Big and Small – Part 2** <ul><li>[Unit Testing](slides/README.md)<ul><li>Avoiding Brittle Tests</li><li>Writing Clear Unit Tests</li></ul> | [Better Unit Testing](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
+|4 | **Testing Big and Small Part 3** <ul><li>[Test Doubles](slides/README.md) </li><li>[Larger Tests](slides/README.md) </li></ul>**[Coverage Criteria, Introduction](slides/README.md)**<ul><li>Introduction to Coverage Criteria</li></ul> | [Test Doubles](practicals/README.md) ([Solutions](practicals/solutions/README.md)) and [Test Coverage](practicals/README.md) ([Solutions](practicals/solutions/README.md))|
+|5 | **[Coverage Criteria, Part 2](slides/README.md)** <ul><li>Control Flow Analysis and Testing</li><li>Logic Analysis and Testing</li><li>Conclusions on Coverage</li></ul> | [Control Flow Graphs and Logic Testing](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
+|6 | [**Regression Testing**](slides/README.md)  <ul><li>Test minimisation</li><li>Test prioritisation</li><li>Test selection</li></ul>| [Regression Testing in Practice](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
+|7 | **[Model-Based Testing](slides/README.md)** | [MBT Exercises](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
+|8 | **[Mutation Testing](slides/README.md)**  | [Code Defenders](slides/README.md) ([Solutions](practicals/solutions/README.md)) |
+|9 | **[Metamorphic Testing](slides/README.md)**  | [Making Metamorphic Tests](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
+|10| **[Fuzzing and Search-Based Testing](slides/README.md)** | [Your First Fuzzer](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
 
-> 🎥 _Lecture recordings will be made available after each lecture has taken place._
 
 ### About Practical Sessions
 
