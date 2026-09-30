@@ -4,7 +4,7 @@
 
 The materials for this module will be pushed to a GitHub repository: 
 
-[https://github.com/UoS-COM3529/com3529-2026](https://github.com/UoS-COM3529/com3529-2026)
+[https://github.com/UoS-COM3529/com3529-26-27](https://github.com/UoS-COM3529/com3529-26-27)
 
 You will need to do a `pull` each week to obtain the latest content.
 
