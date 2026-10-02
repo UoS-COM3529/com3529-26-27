@@ -10,13 +10,13 @@ You will need to do a `pull` each week to obtain the latest content.
 
 ## Java
 
-All the code examples are in Java, and the tests are in JUnit. To use the Java examples in the repository, you will need to have **Java 11 or higher** installed on your machine.
+All the code examples are in Java, and the tests are in JUnit. To use the Java examples in the repository, you will need to have **Java 11 or higher, up to 21** installed on your machine. ([Install Java](https://www.oracle.com/java/technologies/downloads/#java21))
 
 ## Gradle
 
-The Java code examples are in a **Gradle** library.
+The Java code examples are in a **Gradle** library (you don't need to install Gradle for this to work).
 Once you have cloned the repository, you can compile and run tests at
-the terminal from the `code` directory.
+the terminal **from the `code` directory**.
 
 These commands should work on Mac/Linux/WSL.  (For the Windows Prompt , replace the initial `./` with `.\`)
 
@@ -37,6 +37,9 @@ These commands should work on Mac/Linux/WSL.  (For the Windows Prompt , replace 
 `./gradlew test --tests uk.ac.shef.com3529.TriangleTest.shouldClassifyEquilateral`
 
 See the [Gradle website](https://gradle.org) and documentation for more information.
+
+**Tip:** use the --info flag to get more information if your code won't run:
+`./gradlew test --info --tests uk.ac.shef.com3529.TriangleTest.shouldClassifyEquilateral`
 
 ## Use of  Integrated Developer Environments (IDEs)
 
