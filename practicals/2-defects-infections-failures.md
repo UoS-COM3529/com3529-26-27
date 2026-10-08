@@ -8,26 +8,40 @@ that lives in the code directory of this repository: [`code/lib/src/main/java/uk
 The class contains four [static methods](https://docs.oracle.com/javase/tutorial/java/javaOO/classvars.html): `findLast`, `countPositive`, `lastZero`, and
 `oddOrPos`.
 
-Each method has a **defect**. You will need to write JUnit tests that reveal each defect and
+**Each method has a defect**. You will need to write JUnit tests that reveal each defect and
 establish a **fix**.
 
 Specifically, for each method in `DIF.java`, you will need to complete the
 following tasks. The tests you write should be added to a new test class called
-`MyDIFTests.java` (NB: In the task descriptions below, `[methodName]` should be replaced by the name of the method you are writing the test for.)
+**`MyDIFTests.java`** (In the task descriptions below, `[methodName]` should be replaced by the name of the method you are writing the test for.)
 
-1. (a) What and where is the defect?
+> [!IMPORTANT]
+> Remember to `git pull` before starting! 
 
-   (b) Under what condition(s) do inputs to the method cause it to fail?
+## Tasks
+**For each method**, answer the following questions, and write some tests:
 
-   (c) Write **ONE** JUnit test that causes the method to fail. This should be
-   named `[methodName]_failure`. (Note that the test should also fail - i.e.,
-   the test should have an assertion for the _correct_ behaviour of the method.)
+### Part 1
+#### Think: 
+- (a)  What and where is the defect?
+- (b) Under what condition(s) do inputs to the method cause it to fail?
 
-2. (a) Is it possible for inputs to the method to _not_ execute the defect? If
+#### Action:
+- (c) Write **ONE** JUnit test that causes the method to fail. This should be
+   named `[methodName]_failure`.
+> [!Note]
+> You are writing a test that checks for the __correct__ behavior of the method.
+> As the method has a defect, we are expecting this test to fail when we run `./gradlew test` 
+
+
+### Part 2
+#### Think:
+- (a) Is it possible for inputs to the method to _not_ execute the defect? If
    so, describe the condition(s) necessary for the inputs to the method that
    would cause this to happen.
 
-   (b) If possible (as per your answer to part (a)), write a JUnit test
+#### Action:
+- (b) If possible (as per your answer to part (a)), write a JUnit test
    that demonstrates the scenario where the defect is _not_ executed. This should be
    named `[methodName]_defectNotExecuted`.
 
