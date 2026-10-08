@@ -45,25 +45,33 @@ following tasks. The tests you write should be added to a new test class called
    that demonstrates the scenario where the defect is _not_ executed. This should be
    named `[methodName]_defectNotExecuted`.
 
-3. (a) Is it possible for an input to execute the defect but _not_ infect the
-   program's state? If so, describe the condition(s) necessary for the inputs to
-   the method that would cause this to happen.
-
-   (b) If possible (as per your answer to part (a)), write a JUnit test
+### Part 3
+#### Think:
+- (a) Is it possible for an input to execute the defect but _not_ infect the
+   program's state?
+- (b) if so, under what condition(s) would this happen?
+#### Action:
+- (c) If possible (as per your answer to part (b)), write a JUnit test
    that demonstrates this _no-infection_ scenario. Name it
    `[methodName]_defectExecuted_noInfection`.
 
-4. (a) Is it possible for an input to cause an infection but _not_ cause the
-   method to fail? (Note, program statements being executed when they shouldn't
-   count as an infection.) If so, describe the condition(s) necessary for the
+### Part 4
+#### Think:
+- (a) Is it possible for an input to cause an infection but _not_ cause the
+   method to fail?
+> [!Note]
+> Program statements being executed when they shouldn't counts as an infection.
+- (b) If so, describe the condition(s) necessary for the
    inputs to the method that would cause this to happen.
-
-   (b) If possible (as per your answer to part (a)), write a JUnit test case
+#### Action:
+- (c) If possible (as per your answer to part (b)), write a JUnit test case
    that demonstrates this _infection-without-failure_ scenario. Name this test `[methodName]_defectExecuted_infectionCaused_noFailure`.
 
-5. Fix the defect and add the fixed method to a class called `MyDIF.java`.
+### Part 5
+#### Action:
+- (a) Fix the defect and add the fixed method to a class called `MyDIF.java`.
    (Ensure the test you wrote as part of Question 1 passes when run with the
    fixed version of the method.)
 
 > [!IMPORTANT]
-> The repository already includes suggested solutions for this task. We urge you to refrain from just looking up these solutions without attempting the tasks by yourself first. An explained solution sheet will be made available to you after the lab session.
+> An explained solution sheet will be made available to you after the lab session.
