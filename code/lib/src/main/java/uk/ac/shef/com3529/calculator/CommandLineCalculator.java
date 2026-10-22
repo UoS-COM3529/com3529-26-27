@@ -1,5 +1,6 @@
 package uk.ac.shef.com3529.calculator;
 
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class CommandLineCalculator {
@@ -10,9 +11,14 @@ public class CommandLineCalculator {
 
             @Override
             public double readDouble() {
-                double dbl = scanner.nextDouble();
-                scanner.nextLine();
-                return dbl;
+                try {
+                    double value = scanner.nextDouble();
+                    scanner.nextLine();
+                    return value;
+                } catch (InputMismatchException e) {
+                    scanner.nextLine();
+                    throw e;
+                }
             }
 
             @Override
