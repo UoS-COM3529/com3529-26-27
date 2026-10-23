@@ -159,3 +159,6 @@ If everything goes well, the JaCoCo test report will have been generated within 
 ### What can you do with this JaCoCo test report?
 
 Use the test report as a guide to identify untested behaviour in `Calculator`, then write additional tests for those behaviours using mocks or your `FakeReader`.
+
+> [!TIP]
+> Similar coverage information as produced by JaCoCo can be gathered directly in your IDE, e.g., through the built-in "Run With Coverage" features provided by [VSCode](https://code.visualstudio.com/docs/debugtest/testing#_test-coverage) and [IntelliJ IDEA](https://www.jetbrains.com/help/idea/code-coverage.html#run_with_coverage).
