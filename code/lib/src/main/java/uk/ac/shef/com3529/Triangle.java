@@ -1,5 +1,7 @@
 package uk.ac.shef.com3529;
 
+import java.util.concurrent.ThreadLocalRandom;
+
 public class Triangle {
 
     public enum Type {
@@ -43,6 +45,31 @@ public class Triangle {
         }
 
         return type;
+    }
+
+    public static int[] generateRandomTriangle(Type type) {
+        ThreadLocalRandom random = ThreadLocalRandom.current();
+
+        switch (type) {
+            case EQUILATERAL:
+                int side = random.nextInt(1, 101);
+                return new int[]{side, side, side};
+            case ISOSCELES:
+                int equalSide = random.nextInt(2, 101);
+                int thirdSide = random.nextInt(1, equalSide * 2);
+                if (thirdSide == equalSide) {
+                    thirdSide = equalSide - 1;
+                }
+                return new int[]{equalSide, equalSide, thirdSide};
+            case SCALENE:
+                int shortestSide = random.nextInt(2, 51);
+                int middleSide = random.nextInt(shortestSide + 1, 100);
+                int longestSide = random.nextInt(middleSide + 1,
+                        Math.min(101, shortestSide + middleSide));
+                return new int[]{shortestSide, middleSide, longestSide};
+            default:
+                throw new IllegalArgumentException("Unsupported triangle type: " + type);
+        }
     }
 }
 
