@@ -149,62 +149,41 @@ The output of the test selection algorithm therefore contains a single test `sho
 
 It may seem like a trivial algorithm with such a small example. Browse the module's [source code](../code/lib/src/main/java/) directory and try to find a more challenging example where you can apply the same technique.
 
-# Bonus Tasks 
+## Task 6 - Measuring Prioritisation with APFD
 
-The slide pack contains two more advanced variants of the test minimisation algorithm: The Additional Greedy algorithm and the algorithm by Harrold et al. on uniquely covered goals. Read through the slides pertaining to those algorithms.
+In Task 4 you compared orderings by looking at coverage after each prefix. The APFD metric from the slides gives us a single number that summarises how quickly an ordering achieves its coverage. Here, we treat each *branch* as the thing to be "detected": a branch is detected as soon as a test covers it. (Used this way, the metric is sometimes called APBC, the Average Percentage of Branch Coverage.)
 
-1. Apply the Additional Greedy Algorithm to the test minimisation scenario used for Task 1 to produce a reduced test suite that still achieves 100% branch coverage. At each step, determine the additional coverage provided by each test case not already chosen. Again, consider whether there is more than one possible solution.
+For an ordering of $n$ tests and $m$ branches:
 
-2. Apply the algorithm based on uniquely-covered goals proposed by Harrold et al.
+$$APFD = 1 - \frac{TF_1 + TF_2 + \ldots + TF_m}{nm} + \frac{1}{2n}$$
 
-The additional greedy algorithm would also start with the test case $t_5$, as it has the maximum coverage. It then updates the coverage information, to give the number of currently uncovered branches that a remaining test case covers, we get:
+where $TF_i$ is the position (starting from 1) of the first test in the ordering that covers branch $b_i$.
 
-- For $t_1$: $b_1, b_3, b_7$
-- For $t_2$: $b_7$
-- For $t_3$: $b_1, b_4$
-- For $t_4$: $b_6$
-- For $t_6$: $b_1, b_4, b_7$
+1. Using your hit matrix from Task 1, find $TF_i$ for each of the ten branches for the greedy ordering $t_5 t_3 t_4 t_2 t_1 t_6$, and calculate its APFD.
+2. Do the same for the "unprioritised" ordering $t_1 t_2 t_3 t_4 t_5 t_6$. Which ordering covers the branches more quickly?
 
-There is now a choice of next test case: $t_1$ or $t_6$. Let us suppose that we choose $t_6$ and so we now have $\{t_5, t_6\}$.
+### Sample Solution
 
-If we then update the coverage information, to give the number of currently uncovered branches that a test case covers, we get:
+Throughout, $n = 6$ and $m = 10$, so $nm = 60$ and $\frac{1}{2n} = \frac{1}{12}$.
 
-- For $t_1$: $b_3$
-- For $t_2$: None
-- For $t_3$: None
-- For $t_4$: $b_6$
+#### Part 1 - Greedy ordering $t_5 t_3 t_4 t_2 t_1 t_6$
 
-At this point, we must include in the reduced test suite both $t_1$ and $t_4$ as they cover different yet-uncovered branches and we must discard $t_2$ and $t_3$, as they would not contribute any additional coverage. The order in which $t_1$ and $t_4$ are added does not matter and the reduced test suite is
-$\{t_5, t_6, t_1, t_4\}$.
+For each branch, find the first test in the ordering that covers it:
 
-Finally, the algorithm by Harrold et al. would proceed as follows:
+| Branch | $b_1$ | $b_2$ | $b_3$ | $b_4$ | $b_5$ | $b_6$ | $b_7$ | $b_8$ | $b_9$ | $b_{10}$ |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| First covered by | $t_3$ | $t_5$ | $t_1$ | $t_3$ | $t_5$ | $t_4$ | $t_2$ | $t_5$ | $t_5$ | $t_5$ |
+| $TF_i$ | 2 | 1 | 5 | 2 | 1 | 3 | 4 | 1 | 1 | 1 |
 
-First, we list the tests that cover each goal:
+$$APFD = 1 - \frac{21}{60} + \frac{1}{12} \approx 0.733$$
 
-- $b_1$: $t_1$, $t_3$, $t_6$
-- $b_2$: $t_2$,$t_4$,$t_5$
-- $b_3$: $t_1$
-- $b_4$: $t_3$,$t_6$
-- $b_5$: $t_2$,$t_5$
-- $b_6$: $t_4$
-- $b_7$: $t_1$,$t_2$,$t_6$
-- $b_8$: $t_3$,$t_5$
-- $b_9$: $t_4$, $t_5$
-- $b_{10}$: $t_3$, $t_4$, $t_5$
+#### Part 2 - Unprioritised ordering $t_1 t_2 t_3 t_4 t_5 t_6$
 
-We look at goals covered by a single test. In this example, we have $b_3$ and $b_6$ therefore we add the covering tests: $\{t_1, t_4\}$
+| Branch | $b_1$ | $b_2$ | $b_3$ | $b_4$ | $b_5$ | $b_6$ | $b_7$ | $b_8$ | $b_9$ | $b_{10}$ |
+| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
+| First covered by | $t_1$ | $t_2$ | $t_1$ | $t_3$ | $t_2$ | $t_4$ | $t_1$ | $t_3$ | $t_4$ | $t_3$ |
+| $TF_i$ | 1 | 2 | 1 | 3 | 2 | 4 | 1 | 3 | 4 | 3 |
 
-Next, we discard all the goals that have been covered by the selection $\{t_1, t_4\}$ (namely $b_1$, $b_2$, $b_3$, $b_6$, $b_7$, $b_9$ and $b_{10}$) and update the list of remaining uncovered goals:
+$$APFD = 1 - \frac{24}{60} + \frac{1}{12} \approx 0.683$$
 
-
-- $b_4$: $t_3$,$t_6$
-- $b_5$: $t_2$,$t_5$
-- $b_8$: $t_3$,$t_5$
-
-We are left only with goals covered by two tests. Let's pick one at random, e.g., $b_4$, which is covered by tests $t_3$ and $t_6$. Between these, we pick $t_3$, because it covers more yet-uncovered branches than $t_6$ ($b_4$ and $b_8$ vs only $b_4$). Our selection is now $\{t_1, t_4, t_3\}$ and our remaining list of goals to cover is:
-
-- $b_5$: $t_2$,$t_5$
-
-Since there are no more goals left to cover, we add any of the tests covering $b_5$, e.g., $t_2$. The resulting minimised suite is:
-
-$\{t_1, t_4, t_3, t_2\}$
+The greedy ordering is better: it covers the branches more quickly, as we would hope.

@@ -62,10 +62,18 @@ public class AlternativeStringUtilsTest {
 
 Apply a test selection algorithm to decide which test to execute given the statement on line 25 was accidentally changed from `duplicates.add(si);` to `duplicates.clear();`. Which test(s) should be selected?
 
-# Bonus Tasks 
+## Task 6 - Measuring Prioritisation with APFD
 
-The slide pack contains two more advanced variants of the test minimisation algorithm: The Additional Greedy algorithm and the algorithm by Harrold et al. on uniquely covered goals. Read through the slides pertaining to those algorithms.
+In Task 4 you compared orderings by looking at coverage after each prefix. The APFD metric from the slides gives us a single number that summarises how quickly an ordering achieves its coverage. Here, we treat each *branch* as the thing to be "detected": a branch is detected as soon as a test covers it. (Used this way, the metric is sometimes called APBC, the Average Percentage of Branch Coverage.)
 
-1. Apply the Additional Greedy Algorithm to the test minimisation scenario used for Task 1 to produce a reduced test suite that still achieves 100% branch coverage. At each step, determine the additional coverage provided by each test case not already chosen. Again, consider whether there is more than one possible solution.
+For an ordering of $n$ tests and $m$ branches:
 
-2. Apply the algorithm based on uniquely-covered goals proposed by Harrold et al.
+$$APFD = 1 - \frac{TF_1 + TF_2 + \ldots + TF_m}{nm} + \frac{1}{2n}$$
+
+where $TF_i$ is the position (starting from 1) of the first test in the ordering that covers branch $b_i$.
+
+1. Using your hit matrix from Task 1, find $TF_i$ for each of the ten branches for the greedy ordering $t_5 t_3 t_4 t_2 t_1 t_6$, and calculate its APFD.
+2. Do the same for the "unprioritised" ordering $t_1 t_2 t_3 t_4 t_5 t_6$. Which ordering covers the branches more quickly?
+3. In Task 3 you found that the greedy algorithm can produce several orderings, depending on how ties are broken. Calculate the APFD for at least one other greedy ordering. Does the choice of tie-break matter?
+4. Can you find an ordering with a higher APFD than any of the greedy orderings? *Hint: when choosing the next test, count only the branches it covers that are not already covered.* Why does the plain greedy algorithm miss this ordering?
+5. What is the highest APFD that any ordering of 6 tests could achieve in theory? Why can it never reach 1?
