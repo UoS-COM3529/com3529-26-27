@@ -1,4 +1,4 @@
-# Regression Testing
+# COM3529 Practical Session 6: Regression Testing
 
 We will use the following scenario.
 
