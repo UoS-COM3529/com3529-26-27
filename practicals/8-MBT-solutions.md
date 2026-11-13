@@ -16,40 +16,48 @@ For each FSM and assuming input alphabet $X = \{a,b\}$, output alphabet $Y = \{0
 ![FSM Example 1](8-MBT-files/example1.png "FSM Example 1")
 
 
-1.  The resulting state is given by  $\delta^*(s_0,abbab)$ and the output is given by  $\lambda^*(s_0,abbab)$:
+1. The resulting state is given by $\delta^\ast(s_0,abbab)$ and the output is given by $\lambda^\ast(s_0,abbab)$:
 
-    $$\begin{aligned}\delta^*(s_0,abbab) & = \delta^*(\delta(s_0,a),bbab) \\
-    & =  \delta^*(s_1,bbab) \\
-    & =  \delta^*(\delta(s_1,b),bab) \\
-    & =  \delta^*(s_0,bab) \\
-    & =  \delta^*(\delta(s_0,b),ab) \\
-    & =  \delta^*(s_3,ab) \\
-    & =  \delta^*(\delta(s_3,a),b) \\
-    & =  \delta^*(s_2,b) \\
-    & =  \delta^*(\delta(s_2,b),\epsilon) \\
-    & =  \delta^*(s_3,\epsilon) \\
-    & = s_3\end{aligned}$$
+$$
+\begin{aligned}
+\delta^\ast(s_0,abbab) &= \delta^\ast(\delta(s_0,a),bbab) \\
+&= \delta^\ast(s_1,bbab) \\
+&= \delta^\ast(\delta(s_1,b),bab) \\
+&= \delta^\ast(s_0,bab) \\
+&= \delta^\ast(\delta(s_0,b),ab) \\
+&= \delta^\ast(s_3,ab) \\
+&= \delta^\ast(\delta(s_3,a),b) \\
+&= \delta^\ast(s_2,b) \\
+&= \delta^\ast(\delta(s_2,b),\epsilon) \\
+&= \delta^\ast(s_3,\epsilon) \\
+&= s_3
+\end{aligned}
+$$
 
-    $$\begin{aligned}\lambda^*(s_0,abbab) & = \lambda(s_0,a) \lambda^*(\delta(s_0,a),bbab) \\
-    & = 0  \lambda^*(s_1,bbab) \\
-    & =  0 \lambda(s_1,b)  \lambda^*(\delta(s_1,b),bab) \\
-    & =  0 1 \lambda^*(s_0,bab) \\
-    & =  0 1 \lambda(s_0,b) \lambda^*(\delta(s_0,b),ab) \\
-    & =  0 1 1  \lambda^*(s_3,ab) \\
-    & =  0 1 1 \lambda(s_3,a) \lambda^*(\delta(s_3,a),b) \\
-    & =  0 1 1 1 \lambda^*(s_2,b) \\
-    & = 0 1 1 1  \lambda(s_2,b) \lambda^*(\delta(s_2,b),\epsilon) \\
-    & =  0 1 1 1 1 \lambda^*(s_3,\epsilon) \\
-    & = 0 1 1 1 1\end{aligned}$$
+$$
+\begin{aligned}
+\lambda^\ast(s_0,abbab) &= \lambda(s_0,a)\,\lambda^\ast(\delta(s_0,a),bbab) \\
+&= 0\,\lambda^\ast(s_1,bbab) \\
+&= 0\,\lambda(s_1,b)\,\lambda^\ast(\delta(s_1,b),bab) \\
+&= 0\,1\,\lambda^\ast(s_0,bab) \\
+&= 0\,1\,\lambda(s_0,b)\,\lambda^\ast(\delta(s_0,b),ab) \\
+&= 0\,1\,1\,\lambda^\ast(s_3,ab) \\
+&= 0\,1\,1\,\lambda(s_3,a)\,\lambda^\ast(\delta(s_3,a),b) \\
+&= 0\,1\,1\,1\,\lambda^\ast(s_2,b) \\
+&= 0\,1\,1\,1\,\lambda(s_2,b)\,\lambda^\ast(\delta(s_2,b),\epsilon) \\
+&= 0\,1\,1\,1\,1\,\lambda^\ast(s_3,\epsilon) \\
+&= 0\,1\,1\,1\,1
+\end{aligned}
+$$
 
-2. There are a number of choices for the state cover, including
+3. There are a number of choices for the state cover, including
     $V = \{\epsilon, a, aa, b\}$ This is because $\epsilon$ reaches
     $s_0$, $a$ reaches $s_1$, $aa$ reaches $s_2$, and $b$ reaches $s_3$.
 
     In this case, the sequences are minimal (they could result from the
     use of a breadth-first search).
 
-3. Transition tours include: $aaaabbbabaa$. To see that this covers
+4. Transition tours include: $aaaabbbabaa$. To see that this covers
     each transition we can simply trace the behaviour through the FSM, 
     getting:
 
@@ -67,7 +75,7 @@ For each FSM and assuming input alphabet $X = \{a,b\}$, output alphabet $Y = \{0
     -   Transitions from $s_2$: $\{aaaaa, aabb\}$
     -   Transitions from $s_3$: $\{ baaa, bbb\}$
 
-4. There are UIOs for each state, including the following.
+5. There are UIOs for each state, including the following.
 
     | State      | UIO |
     | ----------- | ----------- |
@@ -98,10 +106,10 @@ For each FSM and assuming input alphabet $X = \{a,b\}$, output alphabet $Y = \{0
     for state $s_3$, however the shorter sequence $b$ also gives a UIO
     for $s_3$.
 
-5. There are a number of possible characterising sets, including one
+6. There are a number of possible characterising sets, including one
     defined by the UIOs. A smaller example is $W = \{aa,b\}$.
 
-6.  Applying the W-Method, we use: $V = \{\epsilon, a, aa, b\}$,
+7.  Applying the W-Method, we use: $V = \{\epsilon, a, aa, b\}$,
     $W = \{aa,b\}$. We therefore obtain the following:
 
     $$\{\epsilon, a, aa, b\} \{a,b\} \{aa,b\}$$
@@ -118,33 +126,37 @@ For each FSM and assuming input alphabet $X = \{a,b\}$, output alphabet $Y = \{0
 
 1.  The resulting state is given by  $\delta^*(s_0,abbab)$ and the output is given by  $\lambda^*(s_0,abbab)$:
 
-    $$\begin{aligned}
-    \delta^*(s_0,abbab) & = \delta^*(\delta(s_0,a),bbab) \\
-     & =  \delta^*(s_0,bbab) \\
-     & =  \delta^*(\delta(s_0,b),bab) \\
-     & =  \delta^*(s_1,bab) \\
-     & =  \delta^*(\delta(s_1,b),ab) \\
-     & =  \delta^*(s_2,ab) \\
-     & =  \delta^*(\delta(s_2,a),b) \\
-     & =  \delta^*(s_3,b) \\
-     &  =  \delta^*(\delta(s_3,b),\epsilon)  \\
-     & =  \delta^*(s_2,\epsilon) \\
-     & = s_2
-    \end{aligned}$$
+$$
+\begin{aligned}
+\delta^\ast(s_0,abbab) &= \delta^\ast(\delta(s_0,a),bbab) \\
+&= \delta^\ast(s_0,bbab) \\
+&= \delta^\ast(\delta(s_0,b),bab) \\
+&= \delta^\ast(s_1,bab) \\
+&= \delta^\ast(\delta(s_1,b),ab) \\
+&= \delta^\ast(s_2,ab) \\
+&= \delta^\ast(\delta(s_2,a),b) \\
+&= \delta^\ast(s_3,b) \\
+&= \delta^\ast(\delta(s_3,b),\epsilon) \\
+&= \delta^\ast(s_2,\epsilon) \\
+&= s_2
+\end{aligned}
+$$
 
-    $$\begin{aligned}
-    \lambda^*(s_0,abbab) & = \lambda(s_0,a) \lambda^*(\delta(s_0,a),bbab) \\
-     & = 0  \lambda^*(s_0,bbab) \\
-     & =  0 \lambda(s_0,b)  \lambda^*(\delta(s_0,b),bab) \\
-     & =  0 0 \lambda^*(s_1,bab) \\
-     & =  0 0 \lambda(s_1,b) \lambda^*(\delta(s_1,b),ab) \\
-     & =  0 0 1  \lambda^*(s_2,ab) \\
-     & =  0 0 1 \lambda(s_2,a) \lambda^*(\delta(s_2,a),b) \\
-     & =  0 0 1 0 \lambda^*(s_3,b) \\
-     &  = 0 0 1 0  \lambda(s_3,b) \lambda^*(\delta(s_3,b),\epsilon)  \\
-     & =  0 0 1 0 1 \lambda^*(s_3,\epsilon) \\
-     & = 0 0 1 0 1
-    \end{aligned}$$
+$$
+\begin{aligned}
+\lambda^\ast(s_0,abbab) &= \lambda(s_0,a)\,\lambda^\ast(\delta(s_0,a),bbab) \\
+&= 0\,\lambda^\ast(s_0,bbab) \\
+&= 0\,\lambda(s_0,b)\,\lambda^\ast(\delta(s_0,b),bab) \\
+&= 0\,0\,\lambda^\ast(s_1,bab) \\
+&= 0\,0\,\lambda(s_1,b)\,\lambda^\ast(\delta(s_1,b),ab) \\
+&= 0\,0\,1\,\lambda^\ast(s_2,ab) \\
+&= 0\,0\,1\,\lambda(s_2,a)\,\lambda^\ast(\delta(s_2,a),b) \\
+&= 0\,0\,1\,0\,\lambda^\ast(s_3,b) \\
+&= 0\,0\,1\,0\,\lambda(s_3,b)\,\lambda^\ast(\delta(s_3,b),\epsilon) \\
+&= 0\,0\,1\,0\,1\,\lambda^\ast(s_2,\epsilon) \\
+&= 0\,0\,1\,0\,1
+\end{aligned}
+$$
 
 2.  State cover: $V = \{\epsilon, b, bb, bba\}$. Again, this set is minimal (same reason).
 
