@@ -28,7 +28,7 @@ Welcome! This repository contains code examples, practical sheets, and slides to
 |6 | [**Regression Testing**](slides/6-Regression_testing.pdf) ✓ <ul><li>Test minimisation</li><li>Test prioritisation</li><li>Test selection</li></ul>| [Regression Testing in Practice](practicals/7-regression-testing.md) ✓ ([Solutions](practicals/solutions/7-regression-testing-solutions.md) ✓) |
 |7 | **[Model-Based Testing](slides/7_Model_based_testing.pdf)** ✓ <ul><li>What is model based testing?</li><li>Testing Finite State Machines</li><li>Different approaches to state machine testing.</li></ul> | [MBT Exercises](practicals/8-MBT.md) ✓ ([Solutions](practicals/8-MBT-solutions.md) ✓) |
 |8 | **[Mutation Testing](slides/8-mutation-testing.pdf)** ✓ | [Code Defenders](slides/README.md) ([Solutions](practicals/solutions/README.md)) |
-|9 | **[Metamorphic Testing](slides/9_Metamorphic_testing.pdf)**  | [Making Metamorphic Tests](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
+|9 | **[Metamorphic Testing](slides/9_Metamorphic_testing.pdf)**  | [Making Metamorphic Tests](practicals/9-metamorphic-testing.md) ✓ ([Solutions](practicals/solutions/README.md)) |
 |10| **[Fuzzing and Search-Based Testing](slides/README.md)** | [Your First Fuzzer](practicals/README.md) ([Solutions](practicals/solutions/README.md)) |
 
 
