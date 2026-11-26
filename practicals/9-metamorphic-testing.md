@@ -36,6 +36,7 @@ You will write your tests in [`JavaTimeMetamorphicTest`](../code/lib/src/test/ja
 
 - helper methods for making random source inputs: `randomDate`, `randomInt`, `randomZone` and `randomDateTime`;
 - a worked example, shown below, which follows the same pattern as `SinMetamorphicTest`.
+- Declaration for constants `NUM_TESTS` and `SEED`.
 
 ```java
 /**
@@ -88,7 +89,7 @@ This is the same table as in the lecture.
 | `LocalDate d, a, b`: a date with no time zone | |
 |-|-|
 | `d.plusDays(n)` → `LocalDate` | `n` days later (`n` can be negative) |
-| `d.plusMonths(n)` → `LocalDate` | `n` months later, using the month's last day if needed (31 Jan + 1 → 28 Feb) |
+| `d.plusMonths(n)` → `LocalDate` | `n` months later, using the month's last day if needed (31 Jan + 1 month → 28 Feb of the same year) |
 | `ChronoUnit.DAYS.between(a, b)` → `long` | days from `a` to `b`; negative if `b` is earlier |
 | `ChronoUnit.MONTHS.between(a, b)` → `long` | complete months from `a` to `b` |
 
