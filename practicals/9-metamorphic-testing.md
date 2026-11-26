@@ -7,6 +7,12 @@ In this week's [lecture](../slides/9_Metamorphic_testing.pdf) we saw that metamo
 
 In this lab you will write metamorphic tests in JUnit for Java's date and time library, [`java.time`](https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/time/package-summary.html). The main task is **Task 2**, where you invent relations of your own. As a rough guide, aim to spend about 10 minutes on Task 1, 25 minutes on Task 2 and 15 minutes on Task 3.
 
+> [!NOTE]
+> **Loops in metamorphic tests**: Metamorphic testing is a special case where multiple test iterations within a single test method are appropriate. Unlike typical unit tests that check one specific scenario, metamorphic tests deliberately vary inputs across a range to verify that a relationship holds consistently. Each iteration is essentially testing the same logical requirement (the metamorphic relation) under different conditions. This is why for loops are acceptable here but should still be avoided in general.
+>
+> A workaround to avoid logic in your tests could be to make use of JUnit's [`@ParameterizedTest`](https://www.baeldung.com/parameterized-tests-junit-5) or a Property-Based Testing tool, e.g., [jqwik](https://jqwik.net/). Feel free to explore these alternatives in your independent study time if you are interested, but this falls outside the scope of this lab and module.
+
+
 ## Getting Started
 
 ### The lecture example
